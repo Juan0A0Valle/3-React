@@ -1,28 +1,16 @@
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className='site-footer'>
             <Container>
                 <Row>
+                    {/* First Column */}
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>Links</h5>
-                        <ul className='list-unstyled'>
-                            <li>
-                                <Link to='/'>Home</Link>
-                            </li>
-                            <li>
-                                <Link to='/directory'>Directory</Link>
-                            </li>
-                            <li>
-                                <Link to='/about'>About</Link>
-                            </li>
-                            <li>
-                                <Link to='/contact'>Contact</Link>
-                            </li>
-                        </ul>
+                        <h5>this will be site navigation!</h5>
                     </Col>
+                    
+                    {/* Second Column */}
                     <Col xs='6' sm='3' className='text-center'>
                         <h5>Social</h5>
                         <a
@@ -50,6 +38,8 @@ const Footer = () => {
                             <i className='fa fa-youtube' />
                         </a>
                     </Col>
+
+                    {/* Third Column */}
                     <Col sm='4' className='text-center'>
                         <a
                             role='button'
